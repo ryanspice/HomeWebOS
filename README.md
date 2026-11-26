@@ -1,4 +1,9 @@
-# home-webos (native C++ launcher, 0.1.0)
+# HomeWebOS (native C++ launcher, 0.1.0)
+
+Formal repository/project name: **HomeWebOS** (`ryanspice/HomeWebOS`); this
+checkout lives at `B:\Dev\HomeWebOS`. Contributors and agents should read
+[AGENTS.md](AGENTS.md) (canonical agent entry point) and
+[CONTRIBUTING.md](CONTRIBUTING.md) before making changes.
 
 **A native C++ launcher, installed on the C3 and tested on desktop.**
 C++20, SDL2 / SDL-webOS, a raw OpenGL ES 2 shader renderer, FreeType text and CMake/Ninja.
