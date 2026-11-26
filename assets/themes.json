@@ -1,0 +1,83 @@
+{
+  "schema": 1,
+  "themes": [
+    {
+      "id": "spice",
+      "name": "Spice Home",
+      "layout": "hero",
+      "accent": "#68E0C8",
+      "background": "#091421",
+      "surface": "#193247",
+      "foreground": "#F2F7FC",
+      "muted": "#9CB5C5",
+      "rounding": 22,
+      "motion": 1.0,
+      "description": "Cinematic, calm, and designed for the big screen"
+    },
+    {
+      "id": "metro",
+      "name": "Metro",
+      "layout": "metro",
+      "accent": "#23B6DF",
+      "background": "#10192A",
+      "surface": "#174C75",
+      "foreground": "#F8FBFF",
+      "muted": "#A2C2D1",
+      "rounding": 2,
+      "motion": 0.9,
+      "description": "A living grid of bold, useful tiles"
+    },
+    {
+      "id": "xmb",
+      "name": "Crossbar",
+      "layout": "xmb",
+      "accent": "#A7DAFF",
+      "background": "#071531",
+      "surface": "#16365A",
+      "foreground": "#F9FCFF",
+      "muted": "#9CBBD8",
+      "rounding": 14,
+      "motion": 1.3,
+      "description": "Lightweight horizontal navigation and quiet waves"
+    },
+    {
+      "id": "nxe",
+      "name": "Channels",
+      "layout": "shelves",
+      "accent": "#B8EB65",
+      "background": "#17251C",
+      "surface": "#354838",
+      "foreground": "#FAFFF3",
+      "muted": "#BDCFB9",
+      "rounding": 7,
+      "motion": 1.1,
+      "description": "A layered, card-forward living-room dashboard"
+    },
+    {
+      "id": "ps4",
+      "name": "Ribbon",
+      "layout": "ribbon",
+      "accent": "#67B9FA",
+      "background": "#061C4C",
+      "surface": "#174A89",
+      "foreground": "#FCFDFF",
+      "muted": "#A3C7EC",
+      "rounding": 6,
+      "motion": 0.95,
+      "description": "Concentrated application navigation with deep blue depth"
+    },
+    {
+      "id": "ps5",
+      "name": "System Deck",
+      "layout": "orbit",
+      "accent": "#A8C5FE",
+      "background": "#070D23",
+      "surface": "#172541",
+      "foreground": "#F5F8FF",
+      "muted": "#B7C7E2",
+      "rounding": 12,
+      "motion": 1.0,
+      "description": "Blue ambient wallpaper, PS5-style rail and right-leaning 4\u20133\u20132 cascade"
+    }
+  ]
+}

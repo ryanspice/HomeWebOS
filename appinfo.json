@@ -1,0 +1,25 @@
+{
+  "id": "com.spice.home.cpp",
+  "version": "0.1.0",
+  "vendor": "Spice Home",
+  "type": "native",
+  "main": "spice-home-cpp",
+  "title": "Spice Home C++ Lab",
+  "icon": "icon.png",
+  "largeIcon": "icon.png",
+  "visible": true,
+  "handlesRelaunch": true,
+  "closeOnBackground": false,
+  "noSplashOnLaunch": true,
+  "spinnerOnLaunch": false,
+  "deeplinkingParams": "spiceHomeView",
+  "resolution": "3840x2160",
+  "appCategory": ["home"],
+  "requiredACG": [
+    "application.launcher",
+    "application.query",
+    "network.query",
+    "settings.query",
+    "systemconfig.query"
+  ]
+}

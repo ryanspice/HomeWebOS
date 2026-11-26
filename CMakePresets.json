@@ -1,0 +1,11 @@
+{
+  "version": 3,
+  "cmakeMinimumRequired": { "major": 3, "minor": 20, "patch": 0 },
+  "configurePresets": [
+    { "name": "desktop", "generator": "Ninja", "binaryDir": "${sourceDir}/build/desktop", "cacheVariables": { "CMAKE_BUILD_TYPE": "Release", "SPICE_STRICT": "ON" } },
+    { "name": "core-asan", "inherits": "desktop", "binaryDir": "${sourceDir}/build/core-asan", "cacheVariables": { "CMAKE_BUILD_TYPE": "Debug", "SPICE_BUILD_UI": "OFF", "SPICE_SANITIZE": "ON" } },
+    { "name": "ui-asan", "inherits": "desktop", "binaryDir": "${sourceDir}/build/ui-asan", "cacheVariables": { "CMAKE_BUILD_TYPE": "Debug", "SPICE_BUILD_UI": "ON", "SPICE_SANITIZE": "ON", "SPICE_STRICT": "ON" } }
+  ],
+  "buildPresets": [ { "name": "desktop", "configurePreset": "desktop" }, { "name": "core-asan", "configurePreset": "core-asan" }, { "name": "ui-asan", "configurePreset": "ui-asan" } ],
+  "testPresets": [ { "name": "desktop", "configurePreset": "desktop", "output": { "outputOnFailure": true } }, { "name": "core-asan", "configurePreset": "core-asan", "output": { "outputOnFailure": true } }, { "name": "ui-asan", "configurePreset": "ui-asan", "output": { "outputOnFailure": true } } ]
+}

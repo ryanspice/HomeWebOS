@@ -1,0 +1,26 @@
+{
+  "schema": "spice.profiles/1",
+  "generated_at": "2026-11-05T04:21:30Z",
+  "profiles": {
+    "xbox": {
+      "state": "unavailable",
+      "fields": {
+        "handle": {
+          "value": "pikldspratmn",
+          "source": "provided",
+          "observed_at": null
+        }
+      },
+      "last_attempt": {
+        "at": "2026-11-05T04:21:30Z",
+        "result": "unavailable",
+        "detail": "No matching JSON-LD Person was observed in the fetched HTML; account availability remains unknown."
+      }
+    },
+    "psn": {
+      "state": "setup_needed",
+      "fields": {},
+      "last_attempt": null
+    }
+  }
+}

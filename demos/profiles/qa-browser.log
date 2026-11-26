@@ -1,0 +1,24 @@
+PSN starts setup-needed
+no PSN identity guessed
+owner-supplied Xbox handle visible
+Xbox unavailable status visible
+handle provenance visible
+profile link uses fixed official origin
+sample profiles are visible and labelled
+sample does not invent a PSN identity
+starting view restores owner handle
+untrusted HTML renders as text (status: Local snapshot imported.)
+imported stats and source visible
+export creates a local JSON blob
+export preserves imported value
+malformed import preserves displayed data
+remote avatar import is rejected
+invalid timestamp import is rejected
+changing identity removes old details
+focus returns to the updated profile control
+arrow-key focus moves
+page loaded no network resources
+Dashboard browser check: PASS
+Captured qa-desktop.png
+Captured qa-mobile.png
+Captured qa-tv-4k.png

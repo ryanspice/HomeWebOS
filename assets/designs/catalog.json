@@ -1,0 +1,3035 @@
+{
+  "schema": 1,
+  "version": "0.3.5",
+  "design_only": true,
+  "notice": "Every programme, film, game, track, score, count, device and telemetry value is fictional sample data. These entries are design concepts, not installed inventory, official provider artwork, verified availability or working service integrations.",
+  "sources": [
+    {
+      "title": "LG webOS Home Screen (webOS TV 26)",
+      "url": "https://webostv.developer.lge.com/develop/guides/home-screen",
+      "scope": "System destination categories only; no private APIs or launch identifiers."
+    },
+    {
+      "title": "LG Canada — World of Entertainment",
+      "url": "https://www.lg.com/ca_en/tv-soundbars/webos-for-entertainment/",
+      "scope": "Representative streaming services and country/model availability caveats."
+    },
+    {
+      "title": "LG Canada — Gaming Portal",
+      "url": "https://www.lg.com/ca_en/tv-soundbars/webos-lg-gaming-portal/",
+      "scope": "Gaming portal context; specific C3 service availability remains unverified."
+    },
+    {
+      "title": "LG Apps FAQ",
+      "url": "https://us.lgappstv.com/main/faq",
+      "scope": "Model, country and provider availability limitations."
+    }
+  ],
+  "categories": [
+    "LG & TV",
+    "Streaming",
+    "Sports",
+    "Music",
+    "Gaming",
+    "Inputs"
+  ],
+  "entries": [
+    {
+      "key": "live-tv",
+      "name": "Live TV",
+      "category": "LG & TV",
+      "surface": "system",
+      "mark": "TV",
+      "accent": "#69C8FF",
+      "secondary": "#496AEF",
+      "scene": "broadcast",
+      "aliases": [
+        "live tv"
+      ],
+      "matched_ids": [
+        "com.webos.app.livetv"
+      ],
+      "availability_note": "Availability and launch identifier must be verified on the actual TV.",
+      "tagline": "A channel-first home for live television.",
+      "description": "A clear now-and-next guide, channel identity and a quiet path back to the programme.",
+      "hero_title": "The evening, live.",
+      "metadata": [
+        {
+          "label": "Channel",
+          "value": "07 · Example One"
+        },
+        {
+          "label": "Now",
+          "value": "Coastlines · 20:00–21:00"
+        },
+        {
+          "label": "Next",
+          "value": "Night Report · 21:00"
+        }
+      ],
+      "cards": [
+        {
+          "title": "Coastlines",
+          "subtitle": "On now · Example One",
+          "detail": "Nature · 24 min remaining",
+          "progress": 0.6
+        },
+        {
+          "title": "Night Report",
+          "subtitle": "Up next · Example One",
+          "detail": "21:00 · 30 min",
+          "progress": 0
+        },
+        {
+          "title": "City Sessions",
+          "subtitle": "Example Two",
+          "detail": "Music · 20:30",
+          "progress": 0
+        }
+      ],
+      "expected_fields": [
+        "Channel name and number",
+        "Programme title and synopsis",
+        "Start/end time and progress",
+        "Signal source and entitlement"
+      ],
+      "sample_only": true
+    },
+    {
+      "key": "lg-channels",
+      "name": "LG Channels",
+      "category": "LG & TV",
+      "surface": "app",
+      "mark": "CH+",
+      "accent": "#ED4E96",
+      "secondary": "#8D56EE",
+      "scene": "broadcast",
+      "aliases": [
+        "lg channels"
+      ],
+      "matched_ids": [],
+      "availability_note": "Availability and launch identifier must be verified on the actual TV.",
+      "tagline": "Free-TV discovery, without the visual noise.",
+      "description": "A channel strip and editorial collections show how live and on-demand content could sit together.",
+      "hero_title": "Something worth finding.",
+      "metadata": [
+        {
+          "label": "Collection",
+          "value": "Evening discovery"
+        },
+        {
+          "label": "Sample channel",
+          "value": "Nature Window"
+        },
+        {
+          "label": "Playback",
+          "value": "Not connected"
+        }
+      ],
+      "cards": [
+        {
+          "title": "Wild North",
+          "subtitle": "Nature Window",
+          "detail": "Original placeholder · Now",
+          "progress": 0.32
+        },
+        {
+          "title": "Kitchen Stories",
+          "subtitle": "Everyday table",
+          "detail": "Original placeholder · 42 min",
+          "progress": 0
+        },
+        {
+          "title": "Quiet Cities",
+          "subtitle": "After hours",
+          "detail": "Original placeholder · 3 episodes",
+          "progress": 0
+        }
+      ],
+      "expected_fields": [
+        "Region-specific channel lineup",
+        "Current programme and VOD artwork",
+        "Ad/entitlement labels",
+        "Playback destination"
+      ],
+      "sample_only": true
+    },
+    {
+      "key": "tv-guide",
+      "name": "TV Guide",
+      "category": "LG & TV",
+      "surface": "system",
+      "mark": "EPG",
+      "accent": "#92D4FC",
+      "secondary": "#5678DC",
+      "scene": "guide",
+      "aliases": [
+        "tv guide",
+        "guide",
+        "live tv guide"
+      ],
+      "matched_ids": [],
+      "availability_note": "Availability and launch identifier must be verified on the actual TV.",
+      "tagline": "A guide that feels like part of the console.",
+      "description": "Time-aligned programme rows, clear selection and contextual detail replace a wall of tiny text.",
+      "hero_title": "Your evening, at a glance.",
+      "metadata": [
+        {
+          "label": "Time window",
+          "value": "20:00–22:00 · Sample"
+        },
+        {
+          "label": "Filter",
+          "value": "All channels"
+        },
+        {
+          "label": "Source",
+          "value": "Example guide"
+        }
+      ],
+      "cards": [
+        {
+          "title": "Example One",
+          "subtitle": "20:00 · Coastlines",
+          "detail": "21:00 · Night Report",
+          "progress": 0.35
+        },
+        {
+          "title": "Example Two",
+          "subtitle": "20:00 · City Sessions",
+          "detail": "20:45 · Studio Notes",
+          "progress": 0.62
+        },
+        {
+          "title": "Example Three",
+          "subtitle": "20:30 · Match Night",
+          "detail": "22:00 · Extra Time",
+          "progress": 0.12
+        }
+      ],
+      "expected_fields": [
+        "EPG channel rows",
+        "Programme start/end time",
+        "Current selection",
+        "Reminder support, if exposed"
+      ],
+      "sample_only": true
+    },
+    {
+      "key": "apps",
+      "name": "LG Apps",
+      "category": "LG & TV",
+      "surface": "system",
+      "mark": "APPS",
+      "accent": "#ED61BA",
+      "secondary": "#9C72FA",
+      "scene": "library",
+      "aliases": [
+        "lg apps",
+        "apps",
+        "lg content store",
+        "content store"
+      ],
+      "matched_ids": [],
+      "availability_note": "Availability and launch identifier must be verified on the actual TV.",
+      "tagline": "An app store, not an advert wall.",
+      "description": "Large categories and readable app cards; availability comes from the TV, never from this design catalog.",
+      "hero_title": "Find your next favourite.",
+      "metadata": [
+        {
+          "label": "Category",
+          "value": "Entertainment"
+        },
+        {
+          "label": "Discovery",
+          "value": "Curated examples"
+        },
+        {
+          "label": "Install actions",
+          "value": "Disabled in preview"
+        }
+      ],
+      "cards": [
+        {
+          "title": "Movie night",
+          "subtitle": "Entertainment",
+          "detail": "Sample collection · 6 cards",
+          "progress": 0
+        },
+        {
+          "title": "Play together",
+          "subtitle": "Gaming",
+          "detail": "Sample collection · 4 cards",
+          "progress": 0
+        },
+        {
+          "title": "Set the mood",
+          "subtitle": "Music",
+          "detail": "Sample collection · 3 cards",
+          "progress": 0
+        }
+      ],
+      "expected_fields": [
+        "App name and publisher",
+        "Installed/update state",
+        "Region and model support",
+        "Permissions and install confirmation"
+      ],
+      "sample_only": true
+    },
+    {
+      "key": "home-hub",
+      "name": "Home Hub",
+      "category": "LG & TV",
+      "surface": "system",
+      "mark": "HUB",
+      "accent": "#65DDD0",
+      "secondary": "#5D8ADF",
+      "scene": "devices",
+      "aliases": [
+        "home hub",
+        "home dashboard",
+        "homehub"
+      ],
+      "matched_ids": [],
+      "availability_note": "Availability and launch identifier must be verified on the actual TV.",
+      "tagline": "Your connected home, deliberately calm.",
+      "description": "Room-level groups, nearby inputs and explicit unavailable states; no pretend access to your devices.",
+      "hero_title": "Everything, in its place.",
+      "metadata": [
+        {
+          "label": "Room",
+          "value": "Living room · Sample"
+        },
+        {
+          "label": "Devices",
+          "value": "4 example devices"
+        },
+        {
+          "label": "Connection",
+          "value": "Not queried"
+        }
+      ],
+      "cards": [
+        {
+          "title": "Living room",
+          "subtitle": "Lighting scene",
+          "detail": "Sample · Evening glow",
+          "progress": 0.48
+        },
+        {
+          "title": "Speakers",
+          "subtitle": "Audio destination",
+          "detail": "Sample · TV speakers",
+          "progress": 0
+        },
+        {
+          "title": "Kitchen",
+          "subtitle": "Appliance tile",
+          "detail": "Sample · No live reading",
+          "progress": 0
+        }
+      ],
+      "expected_fields": [
+        "Device identity and room",
+        "Last observed state and timestamp",
+        "Connection/permission status",
+        "Supported actions with confirmation"
+      ],
+      "sample_only": true
+    },
+    {
+      "key": "media-player",
+      "name": "Media Player",
+      "category": "LG & TV",
+      "surface": "system",
+      "mark": "PLAY",
+      "accent": "#E6B26F",
+      "secondary": "#819DCC",
+      "scene": "library",
+      "aliases": [
+        "media player",
+        "photos & videos",
+        "photo & video",
+        "photos and videos",
+        "smartshare"
+      ],
+      "matched_ids": [],
+      "availability_note": "Availability and launch identifier must be verified on the actual TV.",
+      "tagline": "Local media deserves a theatrical entrance.",
+      "description": "Separate films, photos and music while keeping the storage source and actual format visible.",
+      "hero_title": "Your collection. Front row.",
+      "metadata": [
+        {
+          "label": "Source",
+          "value": "Example USB library"
+        },
+        {
+          "label": "Collection",
+          "value": "Home cinema"
+        },
+        {
+          "label": "Items",
+          "value": "12 sample items"
+        }
+      ],
+      "cards": [
+        {
+          "title": "Northern Lines",
+          "subtitle": "Example film",
+          "detail": "01:38:00 · MKV",
+          "progress": 0.27
+        },
+        {
+          "title": "Autumn Archive",
+          "subtitle": "Example photo album",
+          "detail": "24 photos",
+          "progress": 0
+        },
+        {
+          "title": "Evening Sessions",
+          "subtitle": "Example playlist",
+          "detail": "8 tracks",
+          "progress": 0
+        }
+      ],
+      "expected_fields": [
+        "Storage or DLNA source",
+        "Filename, type and duration",
+        "Resume position",
+        "Actual codec and playback support"
+      ],
+      "sample_only": true
+    },
+    {
+      "key": "web-browser",
+      "name": "Web Browser",
+      "category": "LG & TV",
+      "surface": "system",
+      "mark": "WEB",
+      "accent": "#63C1F3",
+      "secondary": "#735FEB",
+      "scene": "browser",
+      "aliases": [
+        "web browser",
+        "internet",
+        "browser"
+      ],
+      "matched_ids": [],
+      "availability_note": "Availability and launch identifier must be verified on the actual TV.",
+      "tagline": "Big bookmarks. Clear tabs. No clutter.",
+      "description": "A couch-friendly start page with recents, a readable address field and keyboard-first navigation.",
+      "hero_title": "A little more room to browse.",
+      "metadata": [
+        {
+          "label": "Tabs",
+          "value": "3 sample tabs"
+        },
+        {
+          "label": "Start page",
+          "value": "Pinned places"
+        },
+        {
+          "label": "History",
+          "value": "Synthetic only"
+        }
+      ],
+      "cards": [
+        {
+          "title": "Project notes",
+          "subtitle": "Example bookmark",
+          "detail": "example.invalid/notes",
+          "progress": 0
+        },
+        {
+          "title": "Evening reading",
+          "subtitle": "Example bookmark",
+          "detail": "example.invalid/read",
+          "progress": 0
+        },
+        {
+          "title": "Local dashboard",
+          "subtitle": "Example bookmark",
+          "detail": "No network request",
+          "progress": 0
+        }
+      ],
+      "expected_fields": [
+        "Page title and safe URL display",
+        "Open tabs",
+        "Favicon and saved bookmarks",
+        "Loading/error state"
+      ],
+      "sample_only": true
+    },
+    {
+      "key": "gallery",
+      "name": "LG Gallery+",
+      "category": "LG & TV",
+      "surface": "system",
+      "mark": "ART",
+      "accent": "#E5B790",
+      "secondary": "#9CA7A5",
+      "scene": "gallery",
+      "aliases": [
+        "lg gallery+",
+        "art gallery",
+        "gallery"
+      ],
+      "matched_ids": [],
+      "availability_note": "Availability and launch identifier must be verified on the actual TV.",
+      "tagline": "Art-first ambience with very little chrome.",
+      "description": "A framed composition, collection notes and gentle movement create a quieter destination.",
+      "hero_title": "Let the room breathe.",
+      "metadata": [
+        {
+          "label": "Collection",
+          "value": "Still forms"
+        },
+        {
+          "label": "Work",
+          "value": "Dune study · Placeholder"
+        },
+        {
+          "label": "Mode",
+          "value": "Design preview"
+        }
+      ],
+      "cards": [
+        {
+          "title": "Dune study",
+          "subtitle": "Original abstract placeholder",
+          "detail": "Warm minimalism",
+          "progress": 0
+        },
+        {
+          "title": "Blue hour",
+          "subtitle": "Original abstract placeholder",
+          "detail": "Cool tones",
+          "progress": 0
+        },
+        {
+          "title": "Soft geometry",
+          "subtitle": "Original abstract placeholder",
+          "detail": "Neutral forms",
+          "progress": 0
+        }
+      ],
+      "expected_fields": [
+        "Artwork and collection identity",
+        "Rights/subscription status",
+        "Display duration",
+        "Motion and OLED-safe behavior"
+      ],
+      "sample_only": true
+    },
+    {
+      "key": "settings",
+      "name": "LG Settings",
+      "category": "LG & TV",
+      "surface": "system",
+      "mark": "SET",
+      "accent": "#A7BEDD",
+      "secondary": "#6D93BC",
+      "scene": "settings",
+      "aliases": [
+        "lg settings",
+        "settings",
+        "all settings"
+      ],
+      "matched_ids": [],
+      "availability_note": "Availability and launch identifier must be verified on the actual TV.",
+      "tagline": "Readable settings with honest system state.",
+      "description": "Picture, sound, connection and accessibility are grouped into a calm, remote-friendly hierarchy.",
+      "hero_title": "Make it feel right.",
+      "metadata": [
+        {
+          "label": "Picture",
+          "value": "Example · Cinema"
+        },
+        {
+          "label": "Sound",
+          "value": "Example · TV speaker"
+        },
+        {
+          "label": "Read access",
+          "value": "Not requested"
+        }
+      ],
+      "cards": [
+        {
+          "title": "Picture",
+          "subtitle": "Example preset",
+          "detail": "Cinema · No write performed",
+          "progress": 0
+        },
+        {
+          "title": "Sound",
+          "subtitle": "Example output",
+          "detail": "TV speaker · Not observed",
+          "progress": 0
+        },
+        {
+          "title": "Accessibility",
+          "subtitle": "Example preference",
+          "detail": "Reduced motion available",
+          "progress": 0
+        }
+      ],
+      "expected_fields": [
+        "Setting category and current value",
+        "Read permission/error",
+        "Supported write operation",
+        "Explicit confirmation and rollback"
+      ],
+      "sample_only": true
+    },
+    {
+      "key": "game-optimizer",
+      "name": "Game Optimizer",
+      "category": "LG & TV",
+      "surface": "system",
+      "mark": "GAME",
+      "accent": "#A887FF",
+      "secondary": "#54C7E8",
+      "scene": "telemetry",
+      "aliases": [
+        "game optimizer",
+        "game dashboard"
+      ],
+      "matched_ids": [],
+      "availability_note": "Availability and launch identifier must be verified on the actual TV.",
+      "tagline": "A game dashboard without invented telemetry.",
+      "description": "A clean diagnostic frame for input signal, latency features and picture presets.",
+      "hero_title": "Focus on the game.",
+      "metadata": [
+        {
+          "label": "Signal",
+          "value": "Example · 3840×2160"
+        },
+        {
+          "label": "Refresh",
+          "value": "Example · 120 Hz"
+        },
+        {
+          "label": "Measured cadence",
+          "value": "Not measured"
+        }
+      ],
+      "cards": [
+        {
+          "title": "Signal",
+          "subtitle": "Illustrative only",
+          "detail": "Resolution / refresh / HDR",
+          "progress": 0
+        },
+        {
+          "title": "Latency",
+          "subtitle": "Illustrative only",
+          "detail": "ALLM / VRR status",
+          "progress": 0
+        },
+        {
+          "title": "Picture",
+          "subtitle": "Illustrative only",
+          "detail": "Genre preset",
+          "progress": 0
+        }
+      ],
+      "expected_fields": [
+        "Observed HDMI resolution and refresh",
+        "VRR/ALLM capability and active state",
+        "HDR mode",
+        "Measured compositor cadence, separately"
+      ],
+      "sample_only": true
+    },
+    {
+      "key": "gaming-portal",
+      "name": "LG Gaming Portal",
+      "category": "LG & TV",
+      "surface": "system",
+      "mark": "GG",
+      "accent": "#9F8CFF",
+      "secondary": "#4BE3BB",
+      "scene": "arcade",
+      "aliases": [
+        "lg gaming portal",
+        "gaming portal"
+      ],
+      "matched_ids": [],
+      "availability_note": "Availability and launch identifier must be verified on the actual TV.",
+      "tagline": "Cloud, local and connected gaming in one view.",
+      "description": "Service tiles lead to verified providers; a concept row shows how sessions and controller readiness could appear.",
+      "hero_title": "Press play on possibility.",
+      "metadata": [
+        {
+          "label": "Collection",
+          "value": "Jump back in"
+        },
+        {
+          "label": "Controller",
+          "value": "Example · Not queried"
+        },
+        {
+          "label": "Services",
+          "value": "Availability varies"
+        }
+      ],
+      "cards": [
+        {
+          "title": "Orbital Run",
+          "subtitle": "Original game placeholder",
+          "detail": "Cloud-library card",
+          "progress": 0.42
+        },
+        {
+          "title": "Pocket Rally",
+          "subtitle": "Original game placeholder",
+          "detail": "Local-library card",
+          "progress": 0
+        },
+        {
+          "title": "Cedar Quest",
+          "subtitle": "Original game placeholder",
+          "detail": "Recently played card",
+          "progress": 0.18
+        }
+      ],
+      "expected_fields": [
+        "Provider and supported device",
+        "Controller compatibility",
+        "Library entitlement",
+        "Resume/deep-link capability"
+      ],
+      "sample_only": true
+    },
+    {
+      "key": "screen-share",
+      "name": "Screen Share",
+      "category": "LG & TV",
+      "surface": "system",
+      "mark": "CAST",
+      "accent": "#75DAD7",
+      "secondary": "#6C84F4",
+      "scene": "devices",
+      "aliases": [
+        "screen share",
+        "miracast"
+      ],
+      "matched_ids": [],
+      "availability_note": "Availability and launch identifier must be verified on the actual TV.",
+      "tagline": "A clear pairing destination for screen sharing.",
+      "description": "Show the TV identity, connection instructions and an explicit permission request rather than a fake active feed.",
+      "hero_title": "Bring the small screen over.",
+      "metadata": [
+        {
+          "label": "Receiver",
+          "value": "Example TV"
+        },
+        {
+          "label": "Pairing",
+          "value": "Waiting · Example state"
+        },
+        {
+          "label": "Session",
+          "value": "No connection"
+        }
+      ],
+      "cards": [
+        {
+          "title": "Choose this TV",
+          "subtitle": "Example instruction",
+          "detail": "Discover from your device",
+          "progress": 0
+        },
+        {
+          "title": "Review permission",
+          "subtitle": "Example instruction",
+          "detail": "Confirm on the TV",
+          "progress": 0
+        },
+        {
+          "title": "Sharing controls",
+          "subtitle": "Example instruction",
+          "detail": "End session visibly",
+          "progress": 0
+        }
+      ],
+      "expected_fields": [
+        "Receiver identity",
+        "Supported transport",
+        "Pairing/consent state",
+        "Session owner and disconnect action"
+      ],
+      "sample_only": true
+    },
+    {
+      "key": "airplay",
+      "name": "AirPlay",
+      "category": "LG & TV",
+      "surface": "system",
+      "mark": "AIR",
+      "accent": "#A4C6F0",
+      "secondary": "#718BCB",
+      "scene": "devices",
+      "aliases": [
+        "airplay",
+        "apple airplay",
+        "airplay & homekit"
+      ],
+      "matched_ids": [],
+      "availability_note": "Availability and launch identifier must be verified on the actual TV.",
+      "tagline": "A composed receiver screen and simple consent.",
+      "description": "Receiver identity, a sample pairing panel and clear disconnection controls—not an active AirPlay receiver.",
+      "hero_title": "A bigger place for your ideas.",
+      "metadata": [
+        {
+          "label": "Receiver",
+          "value": "Example Living Room"
+        },
+        {
+          "label": "Code",
+          "value": "Hidden until needed"
+        },
+        {
+          "label": "Session",
+          "value": "No connection"
+        }
+      ],
+      "cards": [
+        {
+          "title": "Share a screen",
+          "subtitle": "Example destination",
+          "detail": "Receiver support unverified",
+          "progress": 0
+        },
+        {
+          "title": "Play audio",
+          "subtitle": "Example destination",
+          "detail": "No stream active",
+          "progress": 0
+        },
+        {
+          "title": "Manage access",
+          "subtitle": "Example destination",
+          "detail": "Consent required",
+          "progress": 0
+        }
+      ],
+      "expected_fields": [
+        "Receiver capability",
+        "Pairing code lifecycle",
+        "Connection state",
+        "Session permission"
+      ],
+      "sample_only": true
+    },
+    {
+      "key": "user-guide",
+      "name": "User Guide",
+      "category": "LG & TV",
+      "surface": "system",
+      "mark": "HELP",
+      "accent": "#90C9DB",
+      "secondary": "#667FA8",
+      "scene": "settings",
+      "aliases": [
+        "user guide"
+      ],
+      "matched_ids": [],
+      "availability_note": "Availability and launch identifier must be verified on the actual TV.",
+      "tagline": "Large help topics with a sensible path back.",
+      "description": "Browse task-based help for inputs, sound, apps and remote controls.",
+      "hero_title": "Answers, without the hunt.",
+      "metadata": [
+        {
+          "label": "Topic",
+          "value": "Getting started"
+        },
+        {
+          "label": "Guide",
+          "value": "Sample chapter list"
+        },
+        {
+          "label": "Device version",
+          "value": "Not detected"
+        }
+      ],
+      "cards": [
+        {
+          "title": "Connect a device",
+          "subtitle": "Example help topic",
+          "detail": "HDMI and inputs",
+          "progress": 0
+        },
+        {
+          "title": "Find your apps",
+          "subtitle": "Example help topic",
+          "detail": "App library and availability",
+          "progress": 0
+        },
+        {
+          "title": "Make it accessible",
+          "subtitle": "Example help topic",
+          "detail": "Text, sound and motion",
+          "progress": 0
+        }
+      ],
+      "expected_fields": [
+        "Model-specific guide version",
+        "Task categories",
+        "Search terms",
+        "Offline/online content availability"
+      ],
+      "sample_only": true
+    },
+    {
+      "key": "quick-help",
+      "name": "Quick Help",
+      "category": "LG & TV",
+      "surface": "system",
+      "mark": "?",
+      "accent": "#83BBD5",
+      "secondary": "#5D87B4",
+      "scene": "settings",
+      "aliases": [
+        "quick help"
+      ],
+      "matched_ids": [],
+      "availability_note": "Availability and launch identifier must be verified on the actual TV.",
+      "tagline": "Diagnostics should explain, not intimidate.",
+      "description": "Connection checks and troubleshooting paths are shown as suggestions, never fabricated test results.",
+      "hero_title": "A clearer next step.",
+      "metadata": [
+        {
+          "label": "Check",
+          "value": "Network · Not run"
+        },
+        {
+          "label": "Support",
+          "value": "Example options"
+        },
+        {
+          "label": "Changes",
+          "value": "None performed"
+        }
+      ],
+      "cards": [
+        {
+          "title": "Connection check",
+          "subtitle": "Not run",
+          "detail": "Network status and next steps",
+          "progress": 0
+        },
+        {
+          "title": "Picture and sound",
+          "subtitle": "Not run",
+          "detail": "Guided diagnostic flow",
+          "progress": 0
+        },
+        {
+          "title": "Device information",
+          "subtitle": "Not read",
+          "detail": "Model and firmware details",
+          "progress": 0
+        }
+      ],
+      "expected_fields": [
+        "Diagnostic scope and result",
+        "Error code and timestamp",
+        "Suggested next step",
+        "User-approved support action"
+      ],
+      "sample_only": true
+    },
+    {
+      "key": "lg-account",
+      "name": "LG Account",
+      "category": "LG & TV",
+      "surface": "system",
+      "mark": "ME",
+      "accent": "#DF9DBC",
+      "secondary": "#8375C7",
+      "scene": "settings",
+      "aliases": [
+        "lg account",
+        "account"
+      ],
+      "matched_ids": [],
+      "availability_note": "Availability and launch identifier must be verified on the actual TV.",
+      "tagline": "Profiles without leaking personal information.",
+      "description": "A neutral account shell with a sample avatar, consent controls and a safe signed-out state.",
+      "hero_title": "A place for your preferences.",
+      "metadata": [
+        {
+          "label": "Profile",
+          "value": "Example profile"
+        },
+        {
+          "label": "Account",
+          "value": "Not connected"
+        },
+        {
+          "label": "Privacy",
+          "value": "No personal data loaded"
+        }
+      ],
+      "cards": [
+        {
+          "title": "Profile",
+          "subtitle": "Sample identity",
+          "detail": "Display name and avatar",
+          "progress": 0
+        },
+        {
+          "title": "Preferences",
+          "subtitle": "Sample options",
+          "detail": "Language and accessibility",
+          "progress": 0
+        },
+        {
+          "title": "Privacy",
+          "subtitle": "Sample controls",
+          "detail": "Consent and sign-out",
+          "progress": 0
+        }
+      ],
+      "expected_fields": [
+        "Authenticated/signed-out state",
+        "User-authorized display name",
+        "Preferences",
+        "Consent and sign-out"
+      ],
+      "sample_only": true
+    },
+    {
+      "key": "netflix",
+      "name": "Netflix",
+      "category": "Streaming",
+      "surface": "app",
+      "mark": "N",
+      "accent": "#F34854",
+      "secondary": "#8E377F",
+      "scene": "cinema",
+      "aliases": [
+        "netflix"
+      ],
+      "matched_ids": [],
+      "availability_note": "Availability and launch identifier must be verified on the actual TV.",
+      "tagline": "A more cinematic way to arrive.",
+      "description": "An original placeholder thriller anchors a deep red home, with continue-watching detail and a minimal play affordance.",
+      "hero_title": "After the light",
+      "metadata": [
+        {
+          "label": "Format",
+          "value": "S1 · E3"
+        },
+        {
+          "label": "Detail",
+          "value": "47 min"
+        },
+        {
+          "label": "Sample label",
+          "value": "16+"
+        }
+      ],
+      "cards": [
+        {
+          "title": "After the light",
+          "subtitle": "Example feature",
+          "detail": "S1 · E3 · 47 min",
+          "progress": 0.34
+        },
+        {
+          "title": "Blue hour",
+          "subtitle": "Original placeholder",
+          "detail": "Resume · 22 min remaining",
+          "progress": 0.59
+        },
+        {
+          "title": "A different tomorrow",
+          "subtitle": "Original placeholder",
+          "detail": "Explore collection",
+          "progress": 0
+        }
+      ],
+      "expected_fields": [
+        "Content identity and licensed artwork",
+        "Episode, duration and age rating",
+        "Watch progress and available audio",
+        "Account/entitlement and supported deep link"
+      ],
+      "sample_only": true
+    },
+    {
+      "key": "youtube",
+      "name": "YouTube",
+      "category": "Streaming",
+      "surface": "app",
+      "mark": "YT",
+      "accent": "#FF655F",
+      "secondary": "#DEB670",
+      "scene": "creator",
+      "aliases": [
+        "youtube"
+      ],
+      "matched_ids": [],
+      "availability_note": "Availability and launch identifier must be verified on the actual TV.",
+      "tagline": "Creators take centre stage.",
+      "description": "An example creator feature, subscriptions and a watch-later shelf replace anonymous poster tiles.",
+      "hero_title": "Make something worth watching.",
+      "metadata": [
+        {
+          "label": "Format",
+          "value": "Example creator"
+        },
+        {
+          "label": "Detail",
+          "value": "18:42"
+        },
+        {
+          "label": "Sample label",
+          "value": "Video"
+        }
+      ],
+      "cards": [
+        {
+          "title": "Building a tiny world",
+          "subtitle": "Example creator",
+          "detail": "18:42 · Sample video",
+          "progress": 0.42
+        },
+        {
+          "title": "A room full of sound",
+          "subtitle": "Example creator",
+          "detail": "12:08 · Sample video",
+          "progress": 0
+        },
+        {
+          "title": "The weekend build",
+          "subtitle": "Example subscription",
+          "detail": "24:15 · Sample video",
+          "progress": 0
+        }
+      ],
+      "expected_fields": [
+        "Video and channel identity",
+        "Duration and published date",
+        "User-authorized subscription/watch history",
+        "Playback and sign-in state"
+      ],
+      "sample_only": true
+    },
+    {
+      "key": "prime-video",
+      "name": "Prime Video",
+      "category": "Streaming",
+      "surface": "app",
+      "mark": "prime",
+      "accent": "#63BFFF",
+      "secondary": "#4763B6",
+      "scene": "cinema",
+      "aliases": [
+        "prime video",
+        "amazon prime video",
+        "primevideo"
+      ],
+      "matched_ids": [],
+      "availability_note": "Availability and launch identifier must be verified on the actual TV.",
+      "tagline": "An evening with a little more scope.",
+      "description": "Cool-blue atmosphere, an original adventure placeholder and clearly separated resume and discovery cards.",
+      "hero_title": "The last horizon",
+      "metadata": [
+        {
+          "label": "Format",
+          "value": "Film"
+        },
+        {
+          "label": "Detail",
+          "value": "1 h 52 min"
+        },
+        {
+          "label": "Sample label",
+          "value": "PG-13"
+        }
+      ],
+      "cards": [
+        {
+          "title": "The last horizon",
+          "subtitle": "Example feature",
+          "detail": "Film · 1 h 52 min",
+          "progress": 0.34
+        },
+        {
+          "title": "Blue hour",
+          "subtitle": "Original placeholder",
+          "detail": "Resume · 22 min remaining",
+          "progress": 0.59
+        },
+        {
+          "title": "A different tomorrow",
+          "subtitle": "Original placeholder",
+          "detail": "Explore collection",
+          "progress": 0
+        }
+      ],
+      "expected_fields": [
+        "Content identity and licensed artwork",
+        "Episode, duration and age rating",
+        "Watch progress and available audio",
+        "Account/entitlement and supported deep link"
+      ],
+      "sample_only": true
+    },
+    {
+      "key": "disney-plus",
+      "name": "Disney+",
+      "category": "Streaming",
+      "surface": "app",
+      "mark": "D+",
+      "accent": "#74DDD7",
+      "secondary": "#4779DA",
+      "scene": "orbit",
+      "aliases": [
+        "disney+",
+        "disney plus"
+      ],
+      "matched_ids": [],
+      "availability_note": "Availability and launch identifier must be verified on the actual TV.",
+      "tagline": "A little wonder, full screen.",
+      "description": "A luminous family-adventure placeholder with collection cues and a quieter child-profile-ready hierarchy.",
+      "hero_title": "Where the stars go",
+      "metadata": [
+        {
+          "label": "Format",
+          "value": "Film"
+        },
+        {
+          "label": "Detail",
+          "value": "1 h 38 min"
+        },
+        {
+          "label": "Sample label",
+          "value": "PG"
+        }
+      ],
+      "cards": [
+        {
+          "title": "Where the stars go",
+          "subtitle": "Example feature",
+          "detail": "Film · 1 h 38 min",
+          "progress": 0.34
+        },
+        {
+          "title": "Blue hour",
+          "subtitle": "Original placeholder",
+          "detail": "Resume · 22 min remaining",
+          "progress": 0.59
+        },
+        {
+          "title": "A different tomorrow",
+          "subtitle": "Original placeholder",
+          "detail": "Explore collection",
+          "progress": 0
+        }
+      ],
+      "expected_fields": [
+        "Content identity and licensed artwork",
+        "Episode, duration and age rating",
+        "Watch progress and available audio",
+        "Account/entitlement and supported deep link"
+      ],
+      "sample_only": true
+    },
+    {
+      "key": "apple-tv",
+      "name": "Apple TV",
+      "category": "Streaming",
+      "surface": "app",
+      "mark": "tv",
+      "accent": "#D7E6EA",
+      "secondary": "#9AA8CB",
+      "scene": "gallery",
+      "aliases": [
+        "apple tv",
+        "apple tv+"
+      ],
+      "matched_ids": [],
+      "availability_note": "Availability and launch identifier must be verified on the actual TV.",
+      "tagline": "Let the picture do the talking.",
+      "description": "Restrained type, a sculptural backdrop and an original drama placeholder give the selection room to breathe.",
+      "hero_title": "The shape of silence",
+      "metadata": [
+        {
+          "label": "Format",
+          "value": "Limited series"
+        },
+        {
+          "label": "Detail",
+          "value": "S1 · E2"
+        },
+        {
+          "label": "Sample label",
+          "value": "TV-14"
+        }
+      ],
+      "cards": [
+        {
+          "title": "The shape of silence",
+          "subtitle": "Example feature",
+          "detail": "Limited series · S1 · E2",
+          "progress": 0.34
+        },
+        {
+          "title": "Blue hour",
+          "subtitle": "Original placeholder",
+          "detail": "Resume · 22 min remaining",
+          "progress": 0.59
+        },
+        {
+          "title": "A different tomorrow",
+          "subtitle": "Original placeholder",
+          "detail": "Explore collection",
+          "progress": 0
+        }
+      ],
+      "expected_fields": [
+        "Content identity and licensed artwork",
+        "Episode, duration and age rating",
+        "Watch progress and available audio",
+        "Account/entitlement and supported deep link"
+      ],
+      "sample_only": true
+    },
+    {
+      "key": "plex",
+      "name": "Plex",
+      "category": "Streaming",
+      "surface": "app",
+      "mark": "PLEX",
+      "accent": "#F2BD64",
+      "secondary": "#A36E42",
+      "scene": "library",
+      "aliases": [
+        "plex"
+      ],
+      "matched_ids": [],
+      "availability_note": "Availability and launch identifier must be verified on the actual TV.",
+      "tagline": "Your library, beautifully presented.",
+      "description": "Warm projection light, a sample server label and watch-progress cards create a home-cinema destination.",
+      "hero_title": "Your own premiere",
+      "metadata": [
+        {
+          "label": "Format",
+          "value": "Local example"
+        },
+        {
+          "label": "Detail",
+          "value": "1 h 44 min"
+        },
+        {
+          "label": "Sample label",
+          "value": "Not connected"
+        }
+      ],
+      "cards": [
+        {
+          "title": "Your own premiere",
+          "subtitle": "Example feature",
+          "detail": "Local example · 1 h 44 min",
+          "progress": 0.34
+        },
+        {
+          "title": "Blue hour",
+          "subtitle": "Original placeholder",
+          "detail": "Resume · 22 min remaining",
+          "progress": 0.59
+        },
+        {
+          "title": "A different tomorrow",
+          "subtitle": "Original placeholder",
+          "detail": "Explore collection",
+          "progress": 0
+        }
+      ],
+      "expected_fields": [
+        "User-configured server/library",
+        "Content and artwork permission",
+        "Resume position and media formats",
+        "Connectivity and source capability"
+      ],
+      "sample_only": true
+    },
+    {
+      "key": "jellyfin",
+      "name": "Jellyfin",
+      "category": "Streaming",
+      "surface": "app",
+      "mark": "JF",
+      "accent": "#BC90F8",
+      "secondary": "#559FE3",
+      "scene": "library",
+      "aliases": [
+        "jellyfin"
+      ],
+      "matched_ids": [],
+      "availability_note": "Availability and launch identifier must be verified on the actual TV.",
+      "tagline": "Personal media without anonymous tiles.",
+      "description": "An example server library with collection, playback and connectivity fields kept separate.",
+      "hero_title": "A library of your own",
+      "metadata": [
+        {
+          "label": "Format",
+          "value": "Local example"
+        },
+        {
+          "label": "Detail",
+          "value": "8 collections"
+        },
+        {
+          "label": "Sample label",
+          "value": "Not connected"
+        }
+      ],
+      "cards": [
+        {
+          "title": "A library of your own",
+          "subtitle": "Example feature",
+          "detail": "Local example · 8 collections",
+          "progress": 0.34
+        },
+        {
+          "title": "Blue hour",
+          "subtitle": "Original placeholder",
+          "detail": "Resume · 22 min remaining",
+          "progress": 0.59
+        },
+        {
+          "title": "A different tomorrow",
+          "subtitle": "Original placeholder",
+          "detail": "Explore collection",
+          "progress": 0
+        }
+      ],
+      "expected_fields": [
+        "User-configured server/library",
+        "Content and artwork permission",
+        "Resume position and media formats",
+        "Connectivity and source capability"
+      ],
+      "sample_only": true
+    },
+    {
+      "key": "stremio",
+      "name": "Stremio",
+      "category": "Streaming",
+      "surface": "app",
+      "mark": "ST",
+      "accent": "#C1A0FF",
+      "secondary": "#7970E3",
+      "scene": "orbit",
+      "aliases": [
+        "stremio"
+      ],
+      "matched_ids": [],
+      "availability_note": "Availability and launch identifier must be verified on the actual TV.",
+      "tagline": "A discovery-led media destination.",
+      "description": "A purple editorial field and sample collection cards; sources, permissions and playback remain unconnected.",
+      "hero_title": "One evening. Many worlds.",
+      "metadata": [
+        {
+          "label": "Format",
+          "value": "Sample collection"
+        },
+        {
+          "label": "Detail",
+          "value": "12 items"
+        },
+        {
+          "label": "Sample label",
+          "value": "No sources configured"
+        }
+      ],
+      "cards": [
+        {
+          "title": "One evening. Many worlds.",
+          "subtitle": "Example feature",
+          "detail": "Sample collection · 12 items",
+          "progress": 0.34
+        },
+        {
+          "title": "Blue hour",
+          "subtitle": "Original placeholder",
+          "detail": "Resume · 22 min remaining",
+          "progress": 0.59
+        },
+        {
+          "title": "A different tomorrow",
+          "subtitle": "Original placeholder",
+          "detail": "Explore collection",
+          "progress": 0
+        }
+      ],
+      "expected_fields": [
+        "User-configured server/library",
+        "Content and artwork permission",
+        "Resume position and media formats",
+        "Connectivity and source capability"
+      ],
+      "sample_only": true
+    },
+    {
+      "key": "tubi",
+      "name": "Tubi",
+      "category": "Streaming",
+      "surface": "app",
+      "mark": "tubi",
+      "accent": "#F4DA64",
+      "secondary": "#B68CCB",
+      "scene": "cinema",
+      "aliases": [
+        "tubi"
+      ],
+      "matched_ids": [],
+      "availability_note": "Availability and launch identifier must be verified on the actual TV.",
+      "tagline": "Make room for an unexpected favourite.",
+      "description": "A warm, playful film-discovery placeholder with clear ad-supported-style labelling in the concept.",
+      "hero_title": "A very good detour",
+      "metadata": [
+        {
+          "label": "Format",
+          "value": "Film"
+        },
+        {
+          "label": "Detail",
+          "value": "1 h 36 min"
+        },
+        {
+          "label": "Sample label",
+          "value": "PG"
+        }
+      ],
+      "cards": [
+        {
+          "title": "A very good detour",
+          "subtitle": "Example feature",
+          "detail": "Film · 1 h 36 min",
+          "progress": 0.34
+        },
+        {
+          "title": "Blue hour",
+          "subtitle": "Original placeholder",
+          "detail": "Resume · 22 min remaining",
+          "progress": 0.59
+        },
+        {
+          "title": "A different tomorrow",
+          "subtitle": "Original placeholder",
+          "detail": "Explore collection",
+          "progress": 0
+        }
+      ],
+      "expected_fields": [
+        "Content identity and licensed artwork",
+        "Episode, duration and age rating",
+        "Watch progress and available audio",
+        "Account/entitlement and supported deep link"
+      ],
+      "sample_only": true
+    },
+    {
+      "key": "pluto-tv",
+      "name": "Pluto TV",
+      "category": "Streaming",
+      "surface": "app",
+      "mark": "pluto",
+      "accent": "#FFD87B",
+      "secondary": "#A38EEA",
+      "scene": "broadcast",
+      "aliases": [
+        "pluto tv"
+      ],
+      "matched_ids": [],
+      "availability_note": "Availability and launch identifier must be verified on the actual TV.",
+      "tagline": "Channel surfing, with a little atmosphere.",
+      "description": "Example live channels and on-demand collections share one readable surface.",
+      "hero_title": "Just turn something on.",
+      "metadata": [
+        {
+          "label": "Format",
+          "value": "Example channel"
+        },
+        {
+          "label": "Detail",
+          "value": "On now"
+        },
+        {
+          "label": "Sample label",
+          "value": "No playback"
+        }
+      ],
+      "cards": [
+        {
+          "title": "Just turn something on.",
+          "subtitle": "Example feature",
+          "detail": "Example channel · On now",
+          "progress": 0.34
+        },
+        {
+          "title": "Blue hour",
+          "subtitle": "Original placeholder",
+          "detail": "Resume · 22 min remaining",
+          "progress": 0.59
+        },
+        {
+          "title": "A different tomorrow",
+          "subtitle": "Original placeholder",
+          "detail": "Explore collection",
+          "progress": 0
+        }
+      ],
+      "expected_fields": [
+        "Content identity and licensed artwork",
+        "Episode, duration and age rating",
+        "Watch progress and available audio",
+        "Account/entitlement and supported deep link"
+      ],
+      "sample_only": true
+    },
+    {
+      "key": "paramount-plus",
+      "name": "Paramount+",
+      "category": "Streaming",
+      "surface": "app",
+      "mark": "P+",
+      "accent": "#7CB4FF",
+      "secondary": "#706DE8",
+      "scene": "cinema",
+      "aliases": [
+        "paramount+",
+        "paramount plus"
+      ],
+      "matched_ids": [],
+      "availability_note": "Availability and launch identifier must be verified on the actual TV.",
+      "tagline": "An expansive blue-screen identity.",
+      "description": "An original frontier-drama placeholder, collection ribbons and expected episode metadata.",
+      "hero_title": "Far from the ordinary",
+      "metadata": [
+        {
+          "label": "Format",
+          "value": "Series"
+        },
+        {
+          "label": "Detail",
+          "value": "S1 · E4"
+        },
+        {
+          "label": "Sample label",
+          "value": "TV-14"
+        }
+      ],
+      "cards": [
+        {
+          "title": "Far from the ordinary",
+          "subtitle": "Example feature",
+          "detail": "Series · S1 · E4",
+          "progress": 0.34
+        },
+        {
+          "title": "Blue hour",
+          "subtitle": "Original placeholder",
+          "detail": "Resume · 22 min remaining",
+          "progress": 0.59
+        },
+        {
+          "title": "A different tomorrow",
+          "subtitle": "Original placeholder",
+          "detail": "Explore collection",
+          "progress": 0
+        }
+      ],
+      "expected_fields": [
+        "Content identity and licensed artwork",
+        "Episode, duration and age rating",
+        "Watch progress and available audio",
+        "Account/entitlement and supported deep link"
+      ],
+      "sample_only": true
+    },
+    {
+      "key": "crunchyroll",
+      "name": "Crunchyroll",
+      "category": "Streaming",
+      "surface": "app",
+      "mark": "CR",
+      "accent": "#F8A361",
+      "secondary": "#D65E76",
+      "scene": "arcade",
+      "aliases": [
+        "crunchyroll"
+      ],
+      "matched_ids": [],
+      "availability_note": "Availability and launch identifier must be verified on the actual TV.",
+      "tagline": "A brighter frame for animation.",
+      "description": "An original animated-adventure placeholder with episode, audio-language and subtitle fields.",
+      "hero_title": "The lantern district",
+      "metadata": [
+        {
+          "label": "Format",
+          "value": "Series"
+        },
+        {
+          "label": "Detail",
+          "value": "E6 · 24 min"
+        },
+        {
+          "label": "Sample label",
+          "value": "Audio / subtitles"
+        }
+      ],
+      "cards": [
+        {
+          "title": "The lantern district",
+          "subtitle": "Example feature",
+          "detail": "Series · E6 · 24 min",
+          "progress": 0.34
+        },
+        {
+          "title": "Blue hour",
+          "subtitle": "Original placeholder",
+          "detail": "Resume · 22 min remaining",
+          "progress": 0.59
+        },
+        {
+          "title": "A different tomorrow",
+          "subtitle": "Original placeholder",
+          "detail": "Explore collection",
+          "progress": 0
+        }
+      ],
+      "expected_fields": [
+        "Content identity and licensed artwork",
+        "Episode, duration and age rating",
+        "Watch progress and available audio",
+        "Account/entitlement and supported deep link"
+      ],
+      "sample_only": true
+    },
+    {
+      "key": "crave",
+      "name": "Crave",
+      "category": "Streaming",
+      "surface": "app",
+      "mark": "crave",
+      "accent": "#83D3FF",
+      "secondary": "#6771C6",
+      "scene": "cinema",
+      "aliases": [
+        "crave"
+      ],
+      "matched_ids": [],
+      "availability_note": "Availability and launch identifier must be verified on the actual TV.",
+      "tagline": "A quieter Canadian streaming concept.",
+      "description": "An original drama placeholder with episode progress and separate membership state.",
+      "hero_title": "The long way home",
+      "metadata": [
+        {
+          "label": "Format",
+          "value": "Series"
+        },
+        {
+          "label": "Detail",
+          "value": "S1 · E2"
+        },
+        {
+          "label": "Sample label",
+          "value": "TV-14"
+        }
+      ],
+      "cards": [
+        {
+          "title": "The long way home",
+          "subtitle": "Example feature",
+          "detail": "Series · S1 · E2",
+          "progress": 0.34
+        },
+        {
+          "title": "Blue hour",
+          "subtitle": "Original placeholder",
+          "detail": "Resume · 22 min remaining",
+          "progress": 0.59
+        },
+        {
+          "title": "A different tomorrow",
+          "subtitle": "Original placeholder",
+          "detail": "Explore collection",
+          "progress": 0
+        }
+      ],
+      "expected_fields": [
+        "Content identity and licensed artwork",
+        "Episode, duration and age rating",
+        "Watch progress and available audio",
+        "Account/entitlement and supported deep link"
+      ],
+      "sample_only": true
+    },
+    {
+      "key": "cbc-gem",
+      "name": "CBC Gem",
+      "category": "Streaming",
+      "surface": "app",
+      "mark": "gem",
+      "accent": "#EE5E7D",
+      "secondary": "#816DD9",
+      "scene": "broadcast",
+      "aliases": [
+        "cbc gem",
+        "gem"
+      ],
+      "matched_ids": [],
+      "availability_note": "Availability and launch identifier must be verified on the actual TV.",
+      "tagline": "A public-broadcast discovery concept.",
+      "description": "Original sample documentary cards, a live-feed placeholder and accessible episode detail.",
+      "hero_title": "Stories close to home",
+      "metadata": [
+        {
+          "label": "Format",
+          "value": "Documentary"
+        },
+        {
+          "label": "Detail",
+          "value": "44 min"
+        },
+        {
+          "label": "Sample label",
+          "value": "Sample"
+        }
+      ],
+      "cards": [
+        {
+          "title": "Stories close to home",
+          "subtitle": "Example feature",
+          "detail": "Documentary · 44 min",
+          "progress": 0.34
+        },
+        {
+          "title": "Blue hour",
+          "subtitle": "Original placeholder",
+          "detail": "Resume · 22 min remaining",
+          "progress": 0.59
+        },
+        {
+          "title": "A different tomorrow",
+          "subtitle": "Original placeholder",
+          "detail": "Explore collection",
+          "progress": 0
+        }
+      ],
+      "expected_fields": [
+        "Content identity and licensed artwork",
+        "Episode, duration and age rating",
+        "Watch progress and available audio",
+        "Account/entitlement and supported deep link"
+      ],
+      "sample_only": true
+    },
+    {
+      "key": "ctv",
+      "name": "CTV",
+      "category": "Streaming",
+      "surface": "app",
+      "mark": "CTV",
+      "accent": "#83B9FB",
+      "secondary": "#BE6F9C",
+      "scene": "broadcast",
+      "aliases": [
+        "ctv"
+      ],
+      "matched_ids": [],
+      "availability_note": "Availability and launch identifier must be verified on the actual TV.",
+      "tagline": "Broadcast identity with cinematic space.",
+      "description": "Example live and catch-up programming, with explicit provider and sign-in fields.",
+      "hero_title": "Tonight has a story.",
+      "metadata": [
+        {
+          "label": "Format",
+          "value": "Example programme"
+        },
+        {
+          "label": "Detail",
+          "value": "S2 · E5"
+        },
+        {
+          "label": "Sample label",
+          "value": "45 min"
+        }
+      ],
+      "cards": [
+        {
+          "title": "Tonight has a story.",
+          "subtitle": "Example feature",
+          "detail": "Example programme · S2 · E5",
+          "progress": 0.34
+        },
+        {
+          "title": "Blue hour",
+          "subtitle": "Original placeholder",
+          "detail": "Resume · 22 min remaining",
+          "progress": 0.59
+        },
+        {
+          "title": "A different tomorrow",
+          "subtitle": "Original placeholder",
+          "detail": "Explore collection",
+          "progress": 0
+        }
+      ],
+      "expected_fields": [
+        "Content identity and licensed artwork",
+        "Episode, duration and age rating",
+        "Watch progress and available audio",
+        "Account/entitlement and supported deep link"
+      ],
+      "sample_only": true
+    },
+    {
+      "key": "global-tv",
+      "name": "Global TV",
+      "category": "Streaming",
+      "surface": "app",
+      "mark": "G",
+      "accent": "#F5767C",
+      "secondary": "#AF668F",
+      "scene": "broadcast",
+      "aliases": [
+        "global tv",
+        "global"
+      ],
+      "matched_ids": [],
+      "availability_note": "Availability and launch identifier must be verified on the actual TV.",
+      "tagline": "Now, next and the episode you missed.",
+      "description": "An original current-affairs placeholder with a compact catch-up row and neutral account state.",
+      "hero_title": "Back to your evening.",
+      "metadata": [
+        {
+          "label": "Format",
+          "value": "Example programme"
+        },
+        {
+          "label": "Detail",
+          "value": "20:00–21:00"
+        },
+        {
+          "label": "Sample label",
+          "value": "Sample"
+        }
+      ],
+      "cards": [
+        {
+          "title": "Back to your evening.",
+          "subtitle": "Example feature",
+          "detail": "Example programme · 20:00–21:00",
+          "progress": 0.34
+        },
+        {
+          "title": "Blue hour",
+          "subtitle": "Original placeholder",
+          "detail": "Resume · 22 min remaining",
+          "progress": 0.59
+        },
+        {
+          "title": "A different tomorrow",
+          "subtitle": "Original placeholder",
+          "detail": "Explore collection",
+          "progress": 0
+        }
+      ],
+      "expected_fields": [
+        "Content identity and licensed artwork",
+        "Episode, duration and age rating",
+        "Watch progress and available audio",
+        "Account/entitlement and supported deep link"
+      ],
+      "sample_only": true
+    },
+    {
+      "key": "sportsnet",
+      "name": "Sportsnet",
+      "category": "Sports",
+      "surface": "app",
+      "mark": "SN",
+      "accent": "#69BDFF",
+      "secondary": "#DF745A",
+      "scene": "sport",
+      "aliases": [
+        "sportsnet"
+      ],
+      "matched_ids": [],
+      "availability_note": "Availability and launch identifier must be verified on the actual TV.",
+      "tagline": "A match-night home with a proper scoreboard.",
+      "description": "Illustrative teams, scores and timings—not real events, results or provider listings.",
+      "hero_title": "Northside vs Lakeshore",
+      "metadata": [
+        {
+          "label": "Competition",
+          "value": "Example hockey"
+        },
+        {
+          "label": "Score",
+          "value": "2–1 · Example"
+        },
+        {
+          "label": "Clock",
+          "value": "64:28 · Sample"
+        }
+      ],
+      "cards": [
+        {
+          "title": "Northside vs Lakeshore",
+          "subtitle": "Example live fixture",
+          "detail": "2–1 · Simulated score",
+          "progress": 0.72
+        },
+        {
+          "title": "Match preview",
+          "subtitle": "Original placeholder",
+          "detail": "Starts 21:00 · Sample",
+          "progress": 0
+        },
+        {
+          "title": "The highlights",
+          "subtitle": "Original placeholder",
+          "detail": "8 min · Sample",
+          "progress": 0
+        }
+      ],
+      "expected_fields": [
+        "Real fixture and competition identity",
+        "Observed score and match clock",
+        "Rights/blackout and subscription",
+        "Timestamp and stream latency"
+      ],
+      "sample_only": true
+    },
+    {
+      "key": "tsn",
+      "name": "TSN",
+      "category": "Sports",
+      "surface": "app",
+      "mark": "TSN",
+      "accent": "#EF6C71",
+      "secondary": "#7B8EBE",
+      "scene": "sport",
+      "aliases": [
+        "tsn"
+      ],
+      "matched_ids": [],
+      "availability_note": "Availability and launch identifier must be verified on the actual TV.",
+      "tagline": "A match-night home with a proper scoreboard.",
+      "description": "Illustrative teams, scores and timings—not real events, results or provider listings.",
+      "hero_title": "Harbour vs Valley",
+      "metadata": [
+        {
+          "label": "Competition",
+          "value": "Example basketball"
+        },
+        {
+          "label": "Score",
+          "value": "2–1 · Example"
+        },
+        {
+          "label": "Clock",
+          "value": "64:28 · Sample"
+        }
+      ],
+      "cards": [
+        {
+          "title": "Harbour vs Valley",
+          "subtitle": "Example live fixture",
+          "detail": "2–1 · Simulated score",
+          "progress": 0.72
+        },
+        {
+          "title": "Match preview",
+          "subtitle": "Original placeholder",
+          "detail": "Starts 21:00 · Sample",
+          "progress": 0
+        },
+        {
+          "title": "The highlights",
+          "subtitle": "Original placeholder",
+          "detail": "8 min · Sample",
+          "progress": 0
+        }
+      ],
+      "expected_fields": [
+        "Real fixture and competition identity",
+        "Observed score and match clock",
+        "Rights/blackout and subscription",
+        "Timestamp and stream latency"
+      ],
+      "sample_only": true
+    },
+    {
+      "key": "dazn",
+      "name": "DAZN",
+      "category": "Sports",
+      "surface": "app",
+      "mark": "DAZN",
+      "accent": "#DBEB72",
+      "secondary": "#75B2A9",
+      "scene": "sport",
+      "aliases": [
+        "dazn"
+      ],
+      "matched_ids": [],
+      "availability_note": "Availability and launch identifier must be verified on the actual TV.",
+      "tagline": "A match-night home with a proper scoreboard.",
+      "description": "Illustrative teams, scores and timings—not real events, results or provider listings.",
+      "hero_title": "East City vs West City",
+      "metadata": [
+        {
+          "label": "Competition",
+          "value": "Example football"
+        },
+        {
+          "label": "Score",
+          "value": "2–1 · Example"
+        },
+        {
+          "label": "Clock",
+          "value": "64:28 · Sample"
+        }
+      ],
+      "cards": [
+        {
+          "title": "East City vs West City",
+          "subtitle": "Example live fixture",
+          "detail": "2–1 · Simulated score",
+          "progress": 0.72
+        },
+        {
+          "title": "Match preview",
+          "subtitle": "Original placeholder",
+          "detail": "Starts 21:00 · Sample",
+          "progress": 0
+        },
+        {
+          "title": "The highlights",
+          "subtitle": "Original placeholder",
+          "detail": "8 min · Sample",
+          "progress": 0
+        }
+      ],
+      "expected_fields": [
+        "Real fixture and competition identity",
+        "Observed score and match clock",
+        "Rights/blackout and subscription",
+        "Timestamp and stream latency"
+      ],
+      "sample_only": true
+    },
+    {
+      "key": "fubo",
+      "name": "Fubo",
+      "category": "Sports",
+      "surface": "app",
+      "mark": "fubo",
+      "accent": "#EDAC6C",
+      "secondary": "#788EC3",
+      "scene": "sport",
+      "aliases": [
+        "fubo"
+      ],
+      "matched_ids": [],
+      "availability_note": "Availability and launch identifier must be verified on the actual TV.",
+      "tagline": "A match-night home with a proper scoreboard.",
+      "description": "Illustrative teams, scores and timings—not real events, results or provider listings.",
+      "hero_title": "Coastal vs United",
+      "metadata": [
+        {
+          "label": "Competition",
+          "value": "Example football"
+        },
+        {
+          "label": "Score",
+          "value": "2–1 · Example"
+        },
+        {
+          "label": "Clock",
+          "value": "64:28 · Sample"
+        }
+      ],
+      "cards": [
+        {
+          "title": "Coastal vs United",
+          "subtitle": "Example live fixture",
+          "detail": "2–1 · Simulated score",
+          "progress": 0.72
+        },
+        {
+          "title": "Match preview",
+          "subtitle": "Original placeholder",
+          "detail": "Starts 21:00 · Sample",
+          "progress": 0
+        },
+        {
+          "title": "The highlights",
+          "subtitle": "Original placeholder",
+          "detail": "8 min · Sample",
+          "progress": 0
+        }
+      ],
+      "expected_fields": [
+        "Real fixture and competition identity",
+        "Observed score and match clock",
+        "Rights/blackout and subscription",
+        "Timestamp and stream latency"
+      ],
+      "sample_only": true
+    },
+    {
+      "key": "spotify",
+      "name": "Spotify",
+      "category": "Music",
+      "surface": "app",
+      "mark": "SP",
+      "accent": "#72D999",
+      "secondary": "#6DAFB0",
+      "scene": "music",
+      "aliases": [
+        "spotify"
+      ],
+      "matched_ids": [],
+      "availability_note": "Availability and launch identifier must be verified on the actual TV.",
+      "tagline": "The room has a soundtrack.",
+      "description": "Original sample tracks, a large album treatment and a readable queue; no real account or playback history.",
+      "hero_title": "After hours",
+      "metadata": [
+        {
+          "label": "Artist",
+          "value": "Harbour Lights · Fictional"
+        },
+        {
+          "label": "Track",
+          "value": "02:14 / 04:36 · Example"
+        },
+        {
+          "label": "Output",
+          "value": "Not connected"
+        }
+      ],
+      "cards": [
+        {
+          "title": "After hours",
+          "subtitle": "Harbour Lights · Fictional",
+          "detail": "04:36 · Example track",
+          "progress": 0.49
+        },
+        {
+          "title": "Paper moons",
+          "subtitle": "Original sample track",
+          "detail": "03:52",
+          "progress": 0
+        },
+        {
+          "title": "A softer landing",
+          "subtitle": "Original sample track",
+          "detail": "05:08",
+          "progress": 0
+        }
+      ],
+      "expected_fields": [
+        "Track, artist and licensed artwork",
+        "Playback state and position",
+        "Queue and device/output",
+        "Account and control permissions"
+      ],
+      "sample_only": true
+    },
+    {
+      "key": "apple-music",
+      "name": "Apple Music",
+      "category": "Music",
+      "surface": "app",
+      "mark": "MUSIC",
+      "accent": "#F387A9",
+      "secondary": "#948DDD",
+      "scene": "music",
+      "aliases": [
+        "apple music"
+      ],
+      "matched_ids": [],
+      "availability_note": "Availability and launch identifier must be verified on the actual TV.",
+      "tagline": "The room has a soundtrack.",
+      "description": "Original sample tracks, a large album treatment and a readable queue; no real account or playback history.",
+      "hero_title": "Evening colour",
+      "metadata": [
+        {
+          "label": "Artist",
+          "value": "Soft Signals · Fictional"
+        },
+        {
+          "label": "Track",
+          "value": "02:14 / 04:36 · Example"
+        },
+        {
+          "label": "Output",
+          "value": "Not connected"
+        }
+      ],
+      "cards": [
+        {
+          "title": "Evening colour",
+          "subtitle": "Soft Signals · Fictional",
+          "detail": "04:36 · Example track",
+          "progress": 0.49
+        },
+        {
+          "title": "Paper moons",
+          "subtitle": "Original sample track",
+          "detail": "03:52",
+          "progress": 0
+        },
+        {
+          "title": "A softer landing",
+          "subtitle": "Original sample track",
+          "detail": "05:08",
+          "progress": 0
+        }
+      ],
+      "expected_fields": [
+        "Track, artist and licensed artwork",
+        "Playback state and position",
+        "Queue and device/output",
+        "Account and control permissions"
+      ],
+      "sample_only": true
+    },
+    {
+      "key": "amazon-music",
+      "name": "Amazon Music",
+      "category": "Music",
+      "surface": "app",
+      "mark": "AM",
+      "accent": "#7DE2E3",
+      "secondary": "#8C94E8",
+      "scene": "music",
+      "aliases": [
+        "amazon music"
+      ],
+      "matched_ids": [],
+      "availability_note": "Availability and launch identifier must be verified on the actual TV.",
+      "tagline": "The room has a soundtrack.",
+      "description": "Original sample tracks, a large album treatment and a readable queue; no real account or playback history.",
+      "hero_title": "Stay a little longer",
+      "metadata": [
+        {
+          "label": "Artist",
+          "value": "Night Assembly · Fictional"
+        },
+        {
+          "label": "Track",
+          "value": "02:14 / 04:36 · Example"
+        },
+        {
+          "label": "Output",
+          "value": "Not connected"
+        }
+      ],
+      "cards": [
+        {
+          "title": "Stay a little longer",
+          "subtitle": "Night Assembly · Fictional",
+          "detail": "04:36 · Example track",
+          "progress": 0.49
+        },
+        {
+          "title": "Paper moons",
+          "subtitle": "Original sample track",
+          "detail": "03:52",
+          "progress": 0
+        },
+        {
+          "title": "A softer landing",
+          "subtitle": "Original sample track",
+          "detail": "05:08",
+          "progress": 0
+        }
+      ],
+      "expected_fields": [
+        "Track, artist and licensed artwork",
+        "Playback state and position",
+        "Queue and device/output",
+        "Account and control permissions"
+      ],
+      "sample_only": true
+    },
+    {
+      "key": "retropie",
+      "name": "RetroPie",
+      "category": "Gaming",
+      "surface": "companion",
+      "mark": "Pi",
+      "accent": "#EE9B71",
+      "secondary": "#9B76F3",
+      "scene": "arcade",
+      "aliases": [
+        "retropie"
+      ],
+      "matched_ids": [],
+      "availability_note": "Availability and launch identifier must be verified on the actual TV.",
+      "tagline": "A proper home for the games on your Pi.",
+      "description": "A console-system shelf, fictional game library and an honest companion-status strip. Nothing connects or launches from this preview.",
+      "hero_title": "The classics, front and centre.",
+      "metadata": [
+        {
+          "label": "Companion",
+          "value": "Example · Offline"
+        },
+        {
+          "label": "Systems",
+          "value": "6 sample systems"
+        },
+        {
+          "label": "Display",
+          "value": "Example · HDMI 2"
+        }
+      ],
+      "cards": [
+        {
+          "title": "Pocket Rally",
+          "subtitle": "Original game placeholder",
+          "detail": "16-bit · Last played sample",
+          "progress": 0.38
+        },
+        {
+          "title": "Cedar Quest",
+          "subtitle": "Original game placeholder",
+          "detail": "Handheld · Sample library",
+          "progress": 0
+        },
+        {
+          "title": "Orbital Run",
+          "subtitle": "Original game placeholder",
+          "detail": "Arcade · Sample library",
+          "progress": 0
+        }
+      ],
+      "expected_fields": [
+        "Paired companion and last contact",
+        "Actual system/game catalog",
+        "Launch permission and command scope",
+        "HDMI destination and session status"
+      ],
+      "sample_only": true
+    },
+    {
+      "key": "moonlight",
+      "name": "Moonlight",
+      "category": "Gaming",
+      "surface": "homebrew",
+      "mark": "MOON",
+      "accent": "#A5B9F4",
+      "secondary": "#699DBB",
+      "scene": "orbit",
+      "aliases": [
+        "moonlight",
+        "moonlight game streaming"
+      ],
+      "matched_ids": [],
+      "availability_note": "Availability and launch identifier must be verified on the actual TV.",
+      "tagline": "Streaming should feel like a native destination.",
+      "description": "An example host library and session panel keep resolution requests distinct from measured network and decoder performance.",
+      "hero_title": "Your desktop, from the sofa.",
+      "metadata": [
+        {
+          "label": "Host",
+          "value": "Example desktop"
+        },
+        {
+          "label": "Target",
+          "value": "Example · 4K / 120"
+        },
+        {
+          "label": "Session",
+          "value": "Not connected"
+        }
+      ],
+      "cards": [
+        {
+          "title": "Desktop",
+          "subtitle": "Example host action",
+          "detail": "Pairing required",
+          "progress": 0
+        },
+        {
+          "title": "Civic district",
+          "subtitle": "Original game placeholder",
+          "detail": "Sample host library",
+          "progress": 0.31
+        },
+        {
+          "title": "Night circuit",
+          "subtitle": "Original game placeholder",
+          "detail": "Sample host library",
+          "progress": 0
+        }
+      ],
+      "expected_fields": [
+        "Paired host and connectivity",
+        "Host-provided game list",
+        "Requested stream parameters",
+        "Measured latency, decode time and FPS"
+      ],
+      "sample_only": true
+    },
+    {
+      "key": "geforce-now",
+      "name": "GeForce NOW",
+      "category": "Gaming",
+      "surface": "app",
+      "mark": "GFN",
+      "accent": "#B2DD78",
+      "secondary": "#64BDA3",
+      "scene": "arcade",
+      "aliases": [
+        "geforce now",
+        "nvidia geforce now"
+      ],
+      "matched_ids": [],
+      "availability_note": "Availability and launch identifier must be verified on the actual TV.",
+      "tagline": "A cloud-gaming concept with clear readiness.",
+      "description": "Sample library cards sit beside account, controller and network readiness—not a promised service connection.",
+      "hero_title": "A bigger world of play.",
+      "metadata": [
+        {
+          "label": "Library",
+          "value": "Example collection"
+        },
+        {
+          "label": "Controller",
+          "value": "Not queried"
+        },
+        {
+          "label": "Session",
+          "value": "Not started"
+        }
+      ],
+      "cards": [
+        {
+          "title": "Orbital Run",
+          "subtitle": "Original game placeholder",
+          "detail": "Sample cloud-library card",
+          "progress": 0.21
+        },
+        {
+          "title": "Cedar Quest",
+          "subtitle": "Original game placeholder",
+          "detail": "Sample cloud-library card",
+          "progress": 0
+        },
+        {
+          "title": "Night circuit",
+          "subtitle": "Original game placeholder",
+          "detail": "Sample cloud-library card",
+          "progress": 0
+        }
+      ],
+      "expected_fields": [
+        "Provider-supported TV/model",
+        "Account entitlement",
+        "Controller/network readiness",
+        "Queue and session handoff"
+      ],
+      "sample_only": true
+    },
+    {
+      "key": "xbox",
+      "name": "Xbox",
+      "category": "Gaming",
+      "surface": "app",
+      "mark": "X",
+      "accent": "#86D6A0",
+      "secondary": "#5D9B83",
+      "scene": "arcade",
+      "aliases": [
+        "xbox",
+        "xbox cloud gaming"
+      ],
+      "matched_ids": [],
+      "availability_note": "Availability and launch identifier must be verified on the actual TV.",
+      "tagline": "A cloud and console gaming placeholder.",
+      "description": "A green cinematic identity with fictional games, not a claim that Xbox services are available on this specific TV.",
+      "hero_title": "Find your next adventure.",
+      "metadata": [
+        {
+          "label": "Destination",
+          "value": "Cloud / external concept"
+        },
+        {
+          "label": "Account",
+          "value": "Not connected"
+        },
+        {
+          "label": "Controller",
+          "value": "Not queried"
+        }
+      ],
+      "cards": [
+        {
+          "title": "Cedar Quest",
+          "subtitle": "Original game placeholder",
+          "detail": "Example cloud library",
+          "progress": 0.26
+        },
+        {
+          "title": "Pocket Rally",
+          "subtitle": "Original game placeholder",
+          "detail": "Example cloud library",
+          "progress": 0
+        },
+        {
+          "title": "Friends and play",
+          "subtitle": "Presence placeholder",
+          "detail": "No account data",
+          "progress": 0
+        }
+      ],
+      "expected_fields": [
+        "TV/region service availability",
+        "Subscription and entitlement",
+        "Controller compatibility",
+        "Supported session handoff"
+      ],
+      "sample_only": true
+    },
+    {
+      "key": "retroarch",
+      "name": "RetroArch",
+      "category": "Gaming",
+      "surface": "homebrew",
+      "mark": "RA",
+      "accent": "#ACB8D2",
+      "secondary": "#A383C1",
+      "scene": "arcade",
+      "aliases": [
+        "retroarch"
+      ],
+      "matched_ids": [],
+      "availability_note": "Availability and launch identifier must be verified on the actual TV.",
+      "tagline": "A native-looking homebrew library concept.",
+      "description": "Systems, cores and an original game shelf are presented without pretending ROMs, cores or save states were discovered.",
+      "hero_title": "Every era, one library.",
+      "metadata": [
+        {
+          "label": "Library",
+          "value": "Example only"
+        },
+        {
+          "label": "Core",
+          "value": "Not selected"
+        },
+        {
+          "label": "Controller",
+          "value": "Not queried"
+        }
+      ],
+      "cards": [
+        {
+          "title": "Pocket Rally",
+          "subtitle": "Original game placeholder",
+          "detail": "16-bit · Example",
+          "progress": 0.18
+        },
+        {
+          "title": "Cedar Quest",
+          "subtitle": "Original game placeholder",
+          "detail": "Handheld · Example",
+          "progress": 0
+        },
+        {
+          "title": "Core manager",
+          "subtitle": "Example destination",
+          "detail": "No installation performed",
+          "progress": 0
+        }
+      ],
+      "expected_fields": [
+        "Installed cores and compatible content",
+        "User-owned library and artwork",
+        "Save-state metadata",
+        "Controller mapping and launch support"
+      ],
+      "sample_only": true
+    },
+    {
+      "key": "homebrew",
+      "name": "Homebrew Channel",
+      "category": "Gaming",
+      "surface": "homebrew",
+      "mark": "HB",
+      "accent": "#F2BE76",
+      "secondary": "#7E9BDD",
+      "scene": "library",
+      "aliases": [
+        "homebrew channel",
+        "homebrew"
+      ],
+      "matched_ids": [
+        "org.webosbrew.hbchannel"
+      ],
+      "availability_note": "Availability and launch identifier must be verified on the actual TV.",
+      "tagline": "Community tools deserve a polished front door.",
+      "description": "Readable packages, permissions and update states—with explicit user control rather than background installation.",
+      "hero_title": "Made for a little more.",
+      "metadata": [
+        {
+          "label": "Catalog",
+          "value": "Sample cards"
+        },
+        {
+          "label": "Updates",
+          "value": "Not checked"
+        },
+        {
+          "label": "Install actions",
+          "value": "Disabled in preview"
+        }
+      ],
+      "cards": [
+        {
+          "title": "Media tools",
+          "subtitle": "Example category",
+          "detail": "Read descriptions and permissions",
+          "progress": 0
+        },
+        {
+          "title": "Game streaming",
+          "subtitle": "Example category",
+          "detail": "Check device compatibility",
+          "progress": 0
+        },
+        {
+          "title": "System utilities",
+          "subtitle": "Example category",
+          "detail": "Review before installing",
+          "progress": 0
+        }
+      ],
+      "expected_fields": [
+        "Repository/package identity",
+        "Installed and available version",
+        "Permissions and release notes",
+        "Explicit install/update confirmation"
+      ],
+      "sample_only": true
+    },
+    {
+      "key": "process-deck",
+      "name": "Process Deck",
+      "category": "Gaming",
+      "surface": "homebrew",
+      "mark": "CPU",
+      "accent": "#85BEEB",
+      "secondary": "#9BA9DC",
+      "scene": "telemetry",
+      "aliases": [
+        "process deck",
+        "processor"
+      ],
+      "matched_ids": [],
+      "availability_note": "Availability and launch identifier must be verified on the actual TV.",
+      "tagline": "Useful telemetry, without a wall of numbers.",
+      "description": "Example CPU, memory and rendering tiles demonstrate the intended presentation. None is a benchmark or current reading.",
+      "hero_title": "See what the system is doing.",
+      "metadata": [
+        {
+          "label": "CPU",
+          "value": "18% · Sample"
+        },
+        {
+          "label": "Memory",
+          "value": "620 MB · Sample"
+        },
+        {
+          "label": "Frame time",
+          "value": "Not measured"
+        }
+      ],
+      "cards": [
+        {
+          "title": "CPU activity",
+          "subtitle": "Illustrative chart",
+          "detail": "18% · Not a live measurement",
+          "progress": 0.18
+        },
+        {
+          "title": "Memory",
+          "subtitle": "Illustrative chart",
+          "detail": "620 MB · Not observed",
+          "progress": 0.36
+        },
+        {
+          "title": "Presentation",
+          "subtitle": "No native measurement",
+          "detail": "Frame time and compositor cadence",
+          "progress": 0
+        }
+      ],
+      "expected_fields": [
+        "Metric source and sampling interval",
+        "CPU and memory observation",
+        "Render/present timing distribution",
+        "Foreground state and refresh capability"
+      ],
+      "sample_only": true
+    },
+    {
+      "key": "hdmi1",
+      "name": "HDMI 1",
+      "category": "Inputs",
+      "surface": "input",
+      "mark": "H1",
+      "accent": "#9CAFFA",
+      "secondary": "#7096C8",
+      "scene": "input",
+      "aliases": [
+        "hdmi 1"
+      ],
+      "matched_ids": [
+        "com.webos.app.hdmi1"
+      ],
+      "availability_note": "Availability and launch identifier must be verified on the actual TV.",
+      "tagline": "A deliberate entrance for a connected device.",
+      "description": "Device name, resolution and signal status are illustrative placeholders. The launcher has not inspected this input.",
+      "hero_title": "Console on the big screen.",
+      "metadata": [
+        {
+          "label": "Port",
+          "value": "HDMI 1"
+        },
+        {
+          "label": "Label",
+          "value": "Console · Example"
+        },
+        {
+          "label": "Signal",
+          "value": "Not queried"
+        }
+      ],
+      "cards": [
+        {
+          "title": "Console",
+          "subtitle": "Sample device label",
+          "detail": "No connection claim",
+          "progress": 0
+        },
+        {
+          "title": "Signal details",
+          "subtitle": "Not queried",
+          "detail": "Resolution / HDR / refresh",
+          "progress": 0
+        },
+        {
+          "title": "Audio route",
+          "subtitle": "Not queried",
+          "detail": "TV / ARC / eARC destination",
+          "progress": 0
+        }
+      ],
+      "expected_fields": [
+        "User-set device label",
+        "Observed connection and active signal",
+        "Resolution/HDR/refresh as reported",
+        "Explicit input-switch action"
+      ],
+      "sample_only": true
+    },
+    {
+      "key": "hdmi2",
+      "name": "HDMI 2",
+      "category": "Inputs",
+      "surface": "input",
+      "mark": "H2",
+      "accent": "#EDAB80",
+      "secondary": "#947BC6",
+      "scene": "input",
+      "aliases": [
+        "hdmi 2"
+      ],
+      "matched_ids": [
+        "com.webos.app.hdmi2"
+      ],
+      "availability_note": "Availability and launch identifier must be verified on the actual TV.",
+      "tagline": "A deliberate entrance for a connected device.",
+      "description": "Device name, resolution and signal status are illustrative placeholders. The launcher has not inspected this input.",
+      "hero_title": "RetroPie on the big screen.",
+      "metadata": [
+        {
+          "label": "Port",
+          "value": "HDMI 2"
+        },
+        {
+          "label": "Label",
+          "value": "RetroPie · Example"
+        },
+        {
+          "label": "Signal",
+          "value": "Not queried"
+        }
+      ],
+      "cards": [
+        {
+          "title": "RetroPie",
+          "subtitle": "Sample device label",
+          "detail": "No connection claim",
+          "progress": 0
+        },
+        {
+          "title": "Signal details",
+          "subtitle": "Not queried",
+          "detail": "Resolution / HDR / refresh",
+          "progress": 0
+        },
+        {
+          "title": "Audio route",
+          "subtitle": "Not queried",
+          "detail": "TV / ARC / eARC destination",
+          "progress": 0
+        }
+      ],
+      "expected_fields": [
+        "User-set device label",
+        "Observed connection and active signal",
+        "Resolution/HDR/refresh as reported",
+        "Explicit input-switch action"
+      ],
+      "sample_only": true
+    },
+    {
+      "key": "hdmi3",
+      "name": "HDMI 3",
+      "category": "Inputs",
+      "surface": "input",
+      "mark": "H3",
+      "accent": "#ABD5CA",
+      "secondary": "#808EAF",
+      "scene": "input",
+      "aliases": [
+        "hdmi 3"
+      ],
+      "matched_ids": [
+        "com.webos.app.hdmi3"
+      ],
+      "availability_note": "Availability and launch identifier must be verified on the actual TV.",
+      "tagline": "A deliberate entrance for a connected device.",
+      "description": "Device name, resolution and signal status are illustrative placeholders. The launcher has not inspected this input.",
+      "hero_title": "Media player on the big screen.",
+      "metadata": [
+        {
+          "label": "Port",
+          "value": "HDMI 3"
+        },
+        {
+          "label": "Label",
+          "value": "Media player · Example"
+        },
+        {
+          "label": "Signal",
+          "value": "Not queried"
+        }
+      ],
+      "cards": [
+        {
+          "title": "Media player",
+          "subtitle": "Sample device label",
+          "detail": "No connection claim",
+          "progress": 0
+        },
+        {
+          "title": "Signal details",
+          "subtitle": "Not queried",
+          "detail": "Resolution / HDR / refresh",
+          "progress": 0
+        },
+        {
+          "title": "Audio route",
+          "subtitle": "Not queried",
+          "detail": "TV / ARC / eARC destination",
+          "progress": 0
+        }
+      ],
+      "expected_fields": [
+        "User-set device label",
+        "Observed connection and active signal",
+        "Resolution/HDR/refresh as reported",
+        "Explicit input-switch action"
+      ],
+      "sample_only": true
+    },
+    {
+      "key": "hdmi4",
+      "name": "HDMI 4",
+      "category": "Inputs",
+      "surface": "input",
+      "mark": "H4",
+      "accent": "#A7C2E1",
+      "secondary": "#9C88C6",
+      "scene": "input",
+      "aliases": [
+        "hdmi 4"
+      ],
+      "matched_ids": [
+        "com.webos.app.hdmi4"
+      ],
+      "availability_note": "Availability and launch identifier must be verified on the actual TV.",
+      "tagline": "A deliberate entrance for a connected device.",
+      "description": "Device name, resolution and signal status are illustrative placeholders. The launcher has not inspected this input.",
+      "hero_title": "Desktop PC on the big screen.",
+      "metadata": [
+        {
+          "label": "Port",
+          "value": "HDMI 4"
+        },
+        {
+          "label": "Label",
+          "value": "Desktop PC · Example"
+        },
+        {
+          "label": "Signal",
+          "value": "Not queried"
+        }
+      ],
+      "cards": [
+        {
+          "title": "Desktop PC",
+          "subtitle": "Sample device label",
+          "detail": "No connection claim",
+          "progress": 0
+        },
+        {
+          "title": "Signal details",
+          "subtitle": "Not queried",
+          "detail": "Resolution / HDR / refresh",
+          "progress": 0
+        },
+        {
+          "title": "Audio route",
+          "subtitle": "Not queried",
+          "detail": "TV / ARC / eARC destination",
+          "progress": 0
+        }
+      ],
+      "expected_fields": [
+        "User-set device label",
+        "Observed connection and active signal",
+        "Resolution/HDR/refresh as reported",
+        "Explicit input-switch action"
+      ],
+      "sample_only": true
+    }
+  ]
+}

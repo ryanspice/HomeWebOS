@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Geometric Blue — offline theme fixture</title>
+<style>
+*{box-sizing:border-box}body{margin:0;background:#081020;color:#eefbff;font:16px system-ui,sans-serif}
+main{min-height:100vh;padding:3vw 5vw;background:linear-gradient(90deg,#07101bec,transparent),url('geometric/background.png') center/cover fixed}
+header{display:flex;justify-content:space-between;align-items:center;gap:1rem}h1{font-size:clamp(24px,3vw,48px);margin:0}p{color:#c6dfed;max-width:42rem}
+.rail{display:flex;gap:1rem;margin:3rem 0 2rem;flex-wrap:wrap}.rail button{padding:.35rem;border:2px solid transparent;background:#071e33b8;border-radius:18px;color:white;cursor:pointer}
+.rail button[aria-pressed=true],.rail button:focus-visible{border-color:#81d8ed;outline:2px solid #fff}.rail img{width:62px;height:62px;display:block}.stage{display:grid;grid-template-columns:1fr 1fr;gap:1rem;align-items:center}
+.hero{aspect-ratio:16/9;border-radius:22px;background:url('geometric/hero.png') center/cover;display:grid;place-items:center;border:1px solid #81d8ed88}.hero span{background:#07101bbb;padding:1rem;border-radius:8px}
+.cards{display:grid;grid-template-columns:repeat(5,1fr);gap:1rem;margin-top:2rem}.cards div{background:#102a3cdd;padding:1rem;border-radius:12px;min-height:6rem}
+small{display:block;color:#b1ccdd;margin-top:2rem}@media(max-width:700px){.stage{grid-template-columns:1fr}.cards{grid-template-columns:repeat(2,1fr)}}
+</style></head><body><main><header><h1>Geometric Blue</h1><strong>Offline fixture</strong></header>
+<p>Original geometric artwork for the app-owned theme format. Select a semantic icon to inspect its mapping.</p>
+<nav class="rail" aria-label="Theme semantic icons">
+<button aria-pressed="true" data-slot="navigation.search"><img src="geometric/search.png" alt="Search"></button>
+<button aria-pressed="false" data-slot="navigation.home"><img src="geometric/home.png" alt="Home"></button>
+<button aria-pressed="false" data-slot="navigation.control-center"><img src="geometric/controls.png" alt="Control center"></button>
+<button aria-pressed="false" data-slot="actions.refresh"><img src="geometric/refresh.png" alt="Refresh"></button>
+<button aria-pressed="false" data-slot="actions.settings"><img src="geometric/settings.png" alt="Settings"></button>
+<button aria-pressed="false" data-slot="library.collection"><img src="geometric/library.png" alt="Collection"></button></nav>
+<div class="stage"><div><h2 id="slot">navigation.search</h2><p>Icons are selected by semantic slot. Unmapped icons retain the application’s own fallback.</p><p>The example app ID is illustrative and does not claim an installed app.</p></div><div class="hero"><span>Example app hero override</span></div></div>
+<div class="cards"><div>Original shapes</div><div>Local import</div><div>Bounded assets</div><div>Previous retained</div><div>Built-in fallback</div></div>
+<small>Browser illustration only; native renderer integration and TV acceptance remain open. No network, fonts, or external assets.</small></main>
+<script>document.querySelectorAll('.rail button').forEach(button=>button.addEventListener('click',()=>{document.querySelectorAll('.rail button').forEach(b=>b.setAttribute('aria-pressed','false'));button.setAttribute('aria-pressed','true');document.querySelector('#slot').textContent=button.dataset.slot;}));</script></body></html>

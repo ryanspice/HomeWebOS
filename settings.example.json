@@ -1,0 +1,17 @@
+{
+  "schema": 1,
+  "theme": "ps5",
+  "expanded_icons": true,
+  "reduced_motion": false,
+  "handoff_on_dwell": false,
+  "preview_dwell_seconds": 8,
+  "favorites": [],
+  "processor_app_id": "",
+  "retropie_host": "",
+  "retropie_port": 8767,
+  "retropie_hdmi": 1,
+  "pinned_settings": [],
+  "custom_settings": [],
+  "remote_scancodes": {},
+  "preview_profiles": {}
+}

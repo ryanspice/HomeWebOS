@@ -1,0 +1,13 @@
+/build/
+/dist/
+/.ai/
+/evidence/
+/bin/
+/.ccode/
+/.thoughts/
+/preview-native.png
+*.tmp-*
+__pycache__/
+*.pyc
+/settings.json
+*.ipk

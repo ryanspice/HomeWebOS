@@ -1,0 +1,22 @@
+test_allowed_redirect_and_non_profile_page (test_prepare_profiles.ProfilePreparationTests.test_allowed_redirect_and_non_profile_page) ... ok
+test_atomic_round_trip_and_invalid_existing_file_is_untouched (test_prepare_profiles.ProfilePreparationTests.test_atomic_round_trip_and_invalid_existing_file_is_untouched) ... Profile preparation failed: Expecting property name enclosed in double quotes: line 1 column 2 (char 1)
+ok
+test_changing_identity_drops_old_data (test_prepare_profiles.ProfilePreparationTests.test_changing_identity_drops_old_data) ... ok
+test_cross_origin_redirect_is_not_fetched (test_prepare_profiles.ProfilePreparationTests.test_cross_origin_redirect_is_not_fetched) ... ok
+test_failed_refresh_preserves_public_identity_even_if_it_is_the_only_observation (test_prepare_profiles.ProfilePreparationTests.test_failed_refresh_preserves_public_identity_even_if_it_is_the_only_observation) ... ok
+test_failed_refresh_preserves_values_and_provenance (test_prepare_profiles.ProfilePreparationTests.test_failed_refresh_preserves_values_and_provenance) ... ok
+test_failed_replace_keeps_original (test_prepare_profiles.ProfilePreparationTests.test_failed_replace_keeps_original) ... ok
+test_handles_and_traversal (test_prepare_profiles.ProfilePreparationTests.test_handles_and_traversal) ... ok
+test_html_injection_is_data_and_remote_or_svg_avatar_rejected (test_prepare_profiles.ProfilePreparationTests.test_html_injection_is_data_and_remote_or_svg_avatar_rejected) ... ok
+test_http_and_size_statuses (test_prepare_profiles.ProfilePreparationTests.test_http_and_size_statuses) ... ok
+test_malformed_import_and_unknown_keys (test_prepare_profiles.ProfilePreparationTests.test_malformed_import_and_unknown_keys) ... ok
+test_only_matching_synthetic_jsonld_profile_is_observed (test_prepare_profiles.ProfilePreparationTests.test_only_matching_synthetic_jsonld_profile_is_observed) ... ok
+test_redirect_allowlist_rejects_ssrf_and_identity_change (test_prepare_profiles.ProfilePreparationTests.test_redirect_allowlist_rejects_ssrf_and_identity_change) ... ok
+test_sanitized_observed_xbox_title_is_not_profile_data (test_prepare_profiles.ProfilePreparationTests.test_sanitized_observed_xbox_title_is_not_profile_data) ... ok
+test_timestamp_validation_rejects_invalid_dates (test_prepare_profiles.ProfilePreparationTests.test_timestamp_validation_rejects_invalid_dates) ... ok
+test_worker_timeout_is_an_error (test_prepare_profiles.ProfilePreparationTests.test_worker_timeout_is_an_error) ... ok
+
+----------------------------------------------------------------------
+Ran 16 tests in 0.045s
+
+OK
